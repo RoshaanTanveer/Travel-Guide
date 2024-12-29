@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>TRAVEL GUIDE</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <section id="about-header">
+      <!-- Header Container consisting of Navbar and Pic -->
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <h1>TRAVEL GUIDE</h1>
+          </div>
+
+          <!-- Web-Pages Links -->
+          <ul class="nav-links">
+            <li>
+              <a href="./home.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="./about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="./services.html"><b>SERVICES</b></a>
+            </li>
+            <li>
+              <a href="./contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+
+          <div class="menu-btn">
+            <img src="./img/menu.svg" alt="" />
+          </div>
+        </nav>
+
+        <!-- Pic is pasted from css file due to more flexibility -->
+        <div class="header-content">
+          <h1>WHO ARE WE?</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="About" class="container">
+      <div class="about-img">
+        <img src="./img/Passport-About.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          A travel guide is your gateway to discovering the world with
+          confidence and ease. It's more than just a collection of tips; it's a
+          companion that helps you navigate unfamiliar destinations, uncover
+          hidden treasures, and experience new cultures like a local. From
+          detailed schedules and must-see attractions to practical advice on
+          food, transport, and accommodations, a travel guide ensures you make
+          the most of your journey. Whether you're a seasoned explorer or a
+          first-time adventurer, it's your trusted resource for turning every
+          trip into a story worth telling.
+        </p>
+      </div>
+    </section>
+
+    <section id="talk-to-us">
+      <div class="talk-to-us-content">
+        <h1>Talk To Us</h1>
+        <p>
+          Planning your next adventure?
+          <br />
+          Let us help make it unforgettable! Our dedicated travel guide experts
+          are here to answer your questions, provide recommendations, and guide
+          you through every step of your journey. Whether you need advice on
+          must-visit destinations, insider tips, or assistance with schedules,
+          we're just a message away. Connect with us and start your travel story
+          today!
+        </p>
+        <button class="primary-btn" onclick="showAlert()">Get in Touch</button>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <h1 class="logo">TRAVEL GUIDE</h1>
+    </footer>
+
+    <script>
+      /* This script is for disappearing menu button */
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+
+      /* This script is for alert */
+      function showAlert() {
+        alert(
+          "To explore the world. Contact us at @roshaantanveer492@gmail.com or visit our contact page"
+        );
+      }
+    </script>
+  </body>
+</html>

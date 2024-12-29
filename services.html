@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>TRAVEL GUIDE</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <section id="services-header">
+      <!-- Header Container consisting of Navbar and Pic -->
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <h1>TRAVEL GUIDE</h1>
+          </div>
+
+          <!-- Web-Pages Links -->
+          <ul class="nav-links">
+            <li>
+              <a href="./home.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="./about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="./services.html"><b>SERVICES</b></a>
+            </li>
+            <li>
+              <a href="./contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+
+          <div class="menu-btn">
+            <img src="./img/menu.svg" alt="" />
+          </div>
+        </nav>
+
+        <!-- Pic is pasted from css file due to more flexibility -->
+        <div class="header-content">
+          <h1>SERVICES</h1>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service 1 -->
+    <section id="about" class="container">
+      <div class="about-content">
+        <h1><b>Budget-Friendly Solutions</b></h1>
+        <p>
+          Travel doesn't have to break the bank! We help you plan trips that
+          suit your budget, offering money-saving tips, affordable accommodation
+          options, and cost-effective ways to explore.
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img src="./img/Service1.jpg" alt="" />
+      </div>
+    </section>
+
+    <!-- Service 2 -->
+    <section id="About" class="container">
+      <div class="about-img">
+        <img src="./img/Service2.jpg" alt="" />
+      </div>
+
+      <div class="about-content">
+        <h1><b>Seasonal Travel Recommendations</b></h1>
+        <p>
+          Not sure when to visit your dream destination? We provide seasonal
+          travel advice, highlighting the best times to go for weather,
+          festivals, and unique experiences that only occur at certain times of
+          the year.
+        </p>
+      </div>
+    </section>
+
+    <!-- Service 3 -->
+    <section id="about" class="container">
+      <div class="about-content">
+        <h1><b>Group Travel Planning</b></h1>
+        <p>
+          Whether you're traveling with family, friends, or colleagues, we
+          specialize in coordinating group trips. From finding group-friendly
+          accommodations to organizing shared activities, we ensure everyone has
+          a memorable experience.
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img src="./img/Service3.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="talk-to-us">
+      <div class="talk-to-us-content">
+        <h1>Talk To Us</h1>
+        <p>
+          Planning your next adventure?
+          <br />
+          Let us help make it unforgettable! Our dedicated travel guide experts
+          are here to answer your questions, provide recommendations, and guide
+          you through every step of your journey. Whether you need advice on
+          must-visit destinations, insider tips, or assistance with schedules,
+          we're just a message away. Connect with us and start your travel story
+          today!
+        </p>
+        <button class="primary-btn" onclick="showAlert()">Get in Touch</button>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <h1 class="logo">TRAVEL GUIDE</h1>
+    </footer>
+
+    <script>
+      /* This script is for disappearing menu button */
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+
+      /* This script is for alert */
+      function showAlert() {
+        alert(
+          "To explore the world. Contact us at @roshaantanveer492@gmail.com or visit our contact page"
+        );
+      }
+    </script>
+  </body>
+</html>

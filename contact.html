@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>TRAVEL GUIDE</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <section id="contact-header">
+      <!-- Header Container consisting of Navbar and Pic -->
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <h1>TRAVEL GUIDE</h1>
+          </div>
+
+          <!-- Web-Pages Links -->
+          <ul class="nav-links">
+            <li>
+              <a href="./home.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="./about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="./services.html"><b>SERVICES</b></a>
+            </li>
+            <li>
+              <a href="./contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+
+          <div class="menu-btn">
+            <img src="./img/menu.svg" alt="" />
+          </div>
+        </nav>
+
+        <!-- Pic is pasted from css file due to more flexibility -->
+        <div class="header-content">
+          <h1>CONTACT US</h1>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="container">
+      <!-- Left Side -->
+      <form>
+        <h1>Get in Touch</h1>
+
+        <div class="inputsWrapper">
+          <input type="text" placeholder="Your Name" />
+          <input type="number" placeholder="Phone Number" />
+          <input type="email" placeholder="Email" />
+
+          <textarea
+            name="message"
+            cols="30"
+            rows="10"
+            placeholder="Type your message here"
+          ></textarea>
+
+          <button class="primary-btn">SEND NOW</button>
+        </div>
+      </form>
+
+      <!-- Right Side -->
+      <div class="address">
+        <h1>Talk To Us</h1>
+
+        <div class="detailsWrapper">
+          <div class="detail">
+            <img src="./img/email.png" alt="" />
+            <div class="text">
+              <h6>EMAIL</h6>
+              <p>roshaantanveer492@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <img src="./img/phone.png" alt="" />
+            <div class="text">
+              <h6>PHONE NUMBER</h6>
+              <p>+92-311-7758665</p>
+            </div>
+          </div>
+
+          <div class="detail">
+            <img src="./img/location.png" alt="" />
+            <div class="text">
+              <h6>ADDRESS</h6>
+              <p>
+                H#1104 near Masjid Quba,
+                <br />
+                Q-Block DHA,Multan
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social Links -->
+        <div class="followUsWrapper">
+          <h3>Follow Us</h3>
+          <div class="socialLink">
+            <ul class="socialLink">
+              <li>
+                <a href=""><img src="./img/facebook.png" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/linkedin.png" alt="" /></a>
+              </li>
+              <li>
+                <a href=""><img src="./img/video.png" alt="" /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footerlinks">
+        <li>
+          <a href="./home.html"><b>HOME</b></a>
+        </li>
+        <li>
+          <a href="./about.html"><b>ABOUT</b></a>
+        </li>
+        <li>
+          <a href="./services.html"><b>SERVICES</b></a>
+        </li>
+        <li>
+          <a href="./contact.html"><b>CONTACT</b></a>
+        </li>
+      </ul>
+      <h1 class="logo">Travel Guide</h1>
+    </footer>
+
+    <script>
+      /* This script is for disappearing menu button */
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+    </script>
+  </body>
+</html>

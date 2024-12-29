@@ -1,0 +1,341 @@
+/* Root is used to define custom properties */
+:root {
+    --primary-light: #74a84a;
+    --primary-dark: #2c541d;
+}
+/* '*' is used for whole html styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Jost",sans-serif;
+    /* Overflow will remove horizontal Mover */
+    overflow-x: hidden;
+}
+
+/* Home Page */
+a {
+    /* Text decoration property removes underline content of links */
+    text-decoration: none;
+    /* Inherit colors takes color of its parent */
+    color: inherit;
+}
+/* '#' is used to select element by its id */
+#header {
+    width: 100vw;
+    min-height: 100vh;
+    background-image: url(./img/Home-Banner.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* '.' is used to select element by its class */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 8px;
+}
+nav {
+    /* Display Flex aliigns all things in a single row */
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 10px;
+}
+/* The lower css is used to access Navbars UL's css */
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    font-size: 18px;
+}
+nav .logo{
+    font-size: 20px;
+}
+.header-content {
+    display: flex;
+    /* Direction property is used to determine flex board direction */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+.header-content h1 {
+    font-size: 40px;
+    color: var(--primary-dark);
+    align-items: center;
+    justify-content: center;
+}
+.header-content p {
+    font-size: 30px;
+    color: var(--primary-dark);
+    align-items: center;
+    justify-content: center;
+}
+.primary-btn {
+    padding: 10px 24px;
+    background-color: var(--primary-light);
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+/* Hover means when cursor comes over it */
+.primary-btn:hover {
+    background-color: var(--primary-dark);
+}
+.menu-btn {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: var(--primary-light);
+    padding: 8px 12px;
+    border-radius: 4px;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+#services {
+    display: flex;
+    margin-top: 100px;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.service {
+    width: 300px;
+}
+.service p {
+    color: gray;
+}
+.service img {
+    width: 100%;
+    height: 400px;
+    object-fit: fit;
+}
+#about {
+    display: flex;
+    margin-top: 100px;
+    justify-content: space-between;
+}
+.about-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-content h1 {
+    font-style: 32px;
+    text-transform: uppercase;
+}
+.about-content p {
+    color: gray;
+}
+.about-img {
+    justify-content: center;
+}
+#talk-to-us {
+    background-image: url(./img/Footer.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 500px;
+    margin-top: 100px;
+}
+.talk-to-us-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    gap: 16px;
+    margin-top: 100px;
+    padding: 0 16px;
+}
+.talk-to-us-content h1 {
+    color: var(--primary-dark);
+}
+.talk-to-us-content p {
+    max-width: 500px;
+    text-align: center;
+}
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+footer .logo {
+    color: var(--primary-dark);
+}
+
+/* About Page */
+#about-header {
+    min-height: 400px;
+    background-image: url(./img/About-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#About {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+}
+
+/* Services Page */
+#services-header {
+    min-height: 400px;
+    background-image: url(./img/Services-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* Contact Page */
+#contact-header {
+    min-height: 400px;
+    background-image: url(./img/Contact-Banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#contact-us {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    gap: 60px;
+}
+form {
+    flex-basis: 50%;
+}
+.inputsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 60px;
+    margin-left: 60px;
+}
+.inputsWrapper input {
+    padding: 12px 16px;
+    width: 100%;
+    border: 1px solid var(--primary-dark);
+    outline: none;
+}
+.address {
+    flex-basis: 50%;
+}
+.detailsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px; 
+    margin-top: 60px;  
+}
+.detail {
+    display: flex;
+    gap: 10px;
+}
+.detail h6 {
+    color: gray;
+}
+.detail img {
+    width: 40px;
+    height: 40px;
+}
+.followUsWrapper {
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.socialLink {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    list-style: none;
+}
+
+@media only screen and (max-width: 600px) {
+    /* Home Page */
+    .header-content h1 {
+        padding-top: 30px;
+        font-size: 32px;
+    }
+    .header-content p {
+        font-size: 24px;
+    }
+    /* This will show button in responsive view */
+    .menu-btn {
+        display: block;
+    }
+    nav {
+        padding: 16px;
+    }
+    nav ul {
+        background-color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+        align-items: end;
+        padding-top: 80px;
+        margin-right: -900px;
+        transition: all 0.3s ease;
+    }
+    nav ul.active {
+        margin-right: 0;
+    }
+    nav li {
+        border-bottom: 1px solid var(--primary-dark);
+        width: 100%;
+        padding: 8px 16px;
+        text-align: right;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .about-content, .about-img {
+        max-width: 100%;
+    }
+    .about-content h1 {
+        font-size: 24px;
+    }
+    .about-content p {
+        font-size: 16px;
+        padding: 0 16px;
+    }
+    .about-img img {
+        max-width: 80%;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 32px 0;
+        gap: 16px;
+    }
+    footer ul {
+        flex-direction: column;
+        gap: 16px;
+    }
+    footer .logo {
+        font-size: 24px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    #contact-us {
+        flex-direction: column;
+    }
+    .inputsWrapper {
+        margin-left: 0;
+    }
+    #About {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}

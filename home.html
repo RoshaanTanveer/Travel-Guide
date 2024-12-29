@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>TRAVEL GUIDE</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+
+  <body>
+    <section id="header">
+      <!-- Header Container consisting of Navbar and Pic -->
+      <div class="container">
+        <!-- Navbar -->
+        <nav>
+          <div class="logo">
+            <h1>TRAVEL GUIDE</h1>
+          </div>
+
+          <!-- Web-Pages Links -->
+          <ul class="nav-links">
+            <li>
+              <a href="./home.html"><b>HOME</b></a>
+            </li>
+            <li>
+              <a href="./about.html"><b>ABOUT</b></a>
+            </li>
+            <li>
+              <a href="./services.html"><b>SERVICES</b></a>
+            </li>
+            <li>
+              <a href="./contact.html"><b>CONTACT</b></a>
+            </li>
+          </ul>
+
+          <div class="menu-btn">
+            <img src="./img/menu.svg" alt="Menu Button Pic" />
+          </div>
+        </nav>
+
+        <!-- Pic is pasted from css file due to more flexibility -->
+        <div class="header-content">
+          <h1>TRAVEL GUIDE</h1>
+
+          <p>EXPLORE THE WORLD</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="container">
+      <div class="service">
+        <img src="./img/Path1-Services.jpg" alt="" />
+        <h1>Customized Schedules</h1>
+        <p>
+          We craft personalized travel plans tailored to your preferences,
+          interests, and budget. Whether you're dreaming of a serene beach
+          escape, a thrilling adventure, or a cultural exploration, we ensure
+          every detail is planned to perfection.
+        </p>
+      </div>
+
+      <div class="service">
+        <img src="./img/Path2-Services.jpg" alt="" />
+        <h1>Destination Insights</h1>
+        <p>
+          Discover the hidden gems and must-visit attractions with our in-depth
+          travel guides. From local cuisines to off-the-beaten-path experiences,
+          we provide insider knowledge to make your journey truly unique.
+        </p>
+      </div>
+
+      <div class="service">
+        <img src="./img/Path3-Services.jpg" alt="" />
+        <h1>Travel Assistance</h1>
+        <p>
+          Need help with bookings, packing tips, or navigating unfamiliar
+          places? Our team offers round-the-clock support to ensure your trip is
+          smooth and stress-free. We're here to help, every step of the way!
+        </p>
+      </div>
+    </section>
+
+    <section id="about" class="container">
+      <div class="about-content">
+        <h1>About Us</h1>
+        <p>
+          We are passionate explorers dedicated to helping you discover the
+          world's most incredible destinations. From curated travel guides to
+          personalized tips, we provide everything you need to turn your travel
+          dreams into unforgettable experiences.
+        </p>
+      </div>
+
+      <div class="about-img">
+        <img src="./img/Home-About.jpg" alt="" />
+      </div>
+    </section>
+
+    <section id="talk-to-us">
+      <div class="talk-to-us-content">
+        <h1>Talk To Us</h1>
+        <p>
+          Planning your next adventure?
+          <br />
+          Let us help make it unforgettable! Our dedicated travel guide experts
+          are here to answer your questions, provide recommendations, and guide
+          you through every step of your journey. Whether you need advice on
+          must-visit destinations, insider tips, or assistance with schedules,
+          we're just a message away. Connect with us and start your travel story
+          today!
+        </p>
+        <button class="primary-btn" onclick="showAlert()">Get in Touch</button>
+      </div>
+    </section>
+
+    <footer>
+      <ul class="footerlinks">
+        <li><a href="./home.html">HOME</a></li>
+        <li><a href="./about.html">ABOUT</a></li>
+        <li><a href="./services.html">SERVICES</a></li>
+        <li><a href="./contact.html">CONTACT</a></li>
+      </ul>
+      <h1 class="logo">TRAVEL GUIDE</h1>
+    </footer>
+
+    <script>
+      /* This script is for disappearing menu button */
+      const menuBtn = document.querySelector(".menu-btn");
+      const navLinks = document.querySelector(".nav-links");
+
+      menuBtn.addEventListener("click", function () {
+        navLinks.classList.toggle("active");
+      });
+
+      /* This script is for alert */
+      function showAlert() {
+        alert(
+          "To explore the world. Contact us at @roshaantanveer492@gmail.com or visit our contact page"
+        );
+      }
+    </script>
+  </body>
+</html>
